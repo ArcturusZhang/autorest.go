@@ -392,6 +392,7 @@ else
             result, err = client.@(Model.ResponderMethodName)(resp)
             if err != nil {
             err = @(Model.AutorestError("Failure responding to next results request", "resp", null, Model.NextMethodName))
+            return
             }
             return
         </text>
